@@ -5,7 +5,7 @@ import math
 from geometry_msgs.msg import Twist
 from turtlesim.msg import Pose
 
-def rotate():
+def main():
 
 	# Make the script a ROS Node.
 	rospy.init_node('node_turtle_revolving', anonymous=True)
@@ -44,7 +44,7 @@ def rotate():
 	
 	print("Move")
 
-	#Loop to rotate the turtle untill it reaches its initial point
+	#Loop to rotate the turtle untill it reaches the initial point
 	while(current_distance < distance):
 
 	    # Publish the velocity
@@ -81,8 +81,7 @@ def rotate():
 		
 if __name__ == '__main__':	
     try:
-        #Testing our function
-        rotate()
+        main()
     except rospy.ROSInterruptException: pass
 
 
