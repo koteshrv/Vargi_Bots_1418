@@ -1,0 +1,4 @@
+<launch>
+	<node pkg="pkg_ros_basic" type="turtlerotating.py" name="turtlerotating" output="screen"/>
+</launch>
+
