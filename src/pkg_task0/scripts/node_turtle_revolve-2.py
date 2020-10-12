@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 
-import math
 import rospy
+import math
 from geometry_msgs.msg import Twist
 from turtlesim.msg import Pose
 
-# Move the turtle inside the turtlesim window in a circle and stop at its initial location.
-def move():
+
+def main():
 
     # Make the script a ROS Node.
     rospy.init_node('node_turtle_revolving', anonymous=True)
@@ -32,7 +32,7 @@ def move():
     var_loop_rate = rospy.Rate(3)  # Loop will run 3 times in 1 second
 
     # Takes initial time to velocity calculus
-    init_time = rospy.Time.now().to_sec()
+    t0 = rospy.Time.now().to_sec()
 
     current_distance = 0
     linear_vel = vel_msg.linear.x
@@ -41,24 +41,24 @@ def move():
     radius = 1  # Since angular_vel is 1
     distance = 2 * math.pi * radius
 
-    print "Move"
+    print("Move")
 
     # Loop to rotate the turtle untill it reaches the initial point
-    while current_distance < distance:
+    while(current_distance < distance):
 
         # Publish the velocity
         vel_publisher.publish(vel_msg)
 
         # Takes actual time to velocity calculus
-        act_time = rospy.Time.now().to_sec()
+        t1 = rospy.Time.now().to_sec()
 
         # Calculates distancePoseStamped
-        current_distance = linear_vel * (act_time - init_time)
+        current_distance = linear_vel * (t1-t0)
 
         # Print info on console.
         rospy.loginfo("Moving in a circle")
 
-        print current_distance
+        print(current_distance)
 
         var_loop_rate.sleep()
 
@@ -77,7 +77,6 @@ def move():
 
 if __name__ == '__main__':
     try:
-        move()
+        main()
     except rospy.ROSInterruptException:
         pass
-
