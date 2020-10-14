@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pkg_ros_basics_generate_messages_eus"
   "/home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/share/roseus/ros/pkg_ros_basics/msg/myMessage.l"
+  "/home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/share/roseus/ros/pkg_ros_basics/srv/AddTwoInts.l"
   "/home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/share/roseus/ros/pkg_ros_basics/manifest.l"
 )
 

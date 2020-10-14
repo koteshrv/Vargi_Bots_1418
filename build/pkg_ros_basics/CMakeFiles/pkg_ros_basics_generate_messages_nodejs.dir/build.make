@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/kotesh/catkin_ws/build/pkg_ros_basics
 include CMakeFiles/pkg_ros_basics_generate_messages_nodejs.dir/progress.make
 
 CMakeFiles/pkg_ros_basics_generate_messages_nodejs: /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/share/gennodejs/ros/pkg_ros_basics/msg/myMessage.js
+CMakeFiles/pkg_ros_basics_generate_messages_nodejs: /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/share/gennodejs/ros/pkg_ros_basics/srv/AddTwoInts.js
 
 
 /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/share/gennodejs/ros/pkg_ros_basics/msg/myMessage.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
@@ -61,8 +62,14 @@ CMakeFiles/pkg_ros_basics_generate_messages_nodejs: /home/kotesh/catkin_ws/devel
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kotesh/catkin_ws/build/pkg_ros_basics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from pkg_ros_basics/myMessage.msg"
 	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/kotesh/catkin_ws/src/pkg_ros_basics/msg/myMessage.msg -Ipkg_ros_basics:/home/kotesh/catkin_ws/src/pkg_ros_basics/msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p pkg_ros_basics -o /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/share/gennodejs/ros/pkg_ros_basics/msg
 
+/home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/share/gennodejs/ros/pkg_ros_basics/srv/AddTwoInts.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/share/gennodejs/ros/pkg_ros_basics/srv/AddTwoInts.js: /home/kotesh/catkin_ws/src/pkg_ros_basics/srv/AddTwoInts.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kotesh/catkin_ws/build/pkg_ros_basics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from pkg_ros_basics/AddTwoInts.srv"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/kotesh/catkin_ws/src/pkg_ros_basics/srv/AddTwoInts.srv -Ipkg_ros_basics:/home/kotesh/catkin_ws/src/pkg_ros_basics/msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p pkg_ros_basics -o /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/share/gennodejs/ros/pkg_ros_basics/srv
+
 pkg_ros_basics_generate_messages_nodejs: CMakeFiles/pkg_ros_basics_generate_messages_nodejs
 pkg_ros_basics_generate_messages_nodejs: /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/share/gennodejs/ros/pkg_ros_basics/msg/myMessage.js
+pkg_ros_basics_generate_messages_nodejs: /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/share/gennodejs/ros/pkg_ros_basics/srv/AddTwoInts.js
 pkg_ros_basics_generate_messages_nodejs: CMakeFiles/pkg_ros_basics_generate_messages_nodejs.dir/build.make
 
 .PHONY : pkg_ros_basics_generate_messages_nodejs

@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "pkg_ros_basics: 1 messages, 0 services")
+message(STATUS "pkg_ros_basics: 1 messages, 1 services")
 
 set(MSG_I_FLAGS "-Ipkg_ros_basics:/home/kotesh/catkin_ws/src/pkg_ros_basics/msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg")
 
@@ -16,6 +16,11 @@ add_custom_target(pkg_ros_basics_generate_messages ALL)
 # verify that message/service dependencies have not changed since configure
 
 
+
+get_filename_component(_filename "/home/kotesh/catkin_ws/src/pkg_ros_basics/srv/AddTwoInts.srv" NAME_WE)
+add_custom_target(_pkg_ros_basics_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "pkg_ros_basics" "/home/kotesh/catkin_ws/src/pkg_ros_basics/srv/AddTwoInts.srv" ""
+)
 
 get_filename_component(_filename "/home/kotesh/catkin_ws/src/pkg_ros_basics/msg/myMessage.msg" NAME_WE)
 add_custom_target(_pkg_ros_basics_generate_messages_check_deps_${_filename}
@@ -36,6 +41,12 @@ _generate_msg_cpp(pkg_ros_basics
 )
 
 ### Generating Services
+_generate_srv_cpp(pkg_ros_basics
+  "/home/kotesh/catkin_ws/src/pkg_ros_basics/srv/AddTwoInts.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/pkg_ros_basics
+)
 
 ### Generating Module File
 _generate_module_cpp(pkg_ros_basics
@@ -49,6 +60,8 @@ add_custom_target(pkg_ros_basics_generate_messages_cpp
 add_dependencies(pkg_ros_basics_generate_messages pkg_ros_basics_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/kotesh/catkin_ws/src/pkg_ros_basics/srv/AddTwoInts.srv" NAME_WE)
+add_dependencies(pkg_ros_basics_generate_messages_cpp _pkg_ros_basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kotesh/catkin_ws/src/pkg_ros_basics/msg/myMessage.msg" NAME_WE)
 add_dependencies(pkg_ros_basics_generate_messages_cpp _pkg_ros_basics_generate_messages_check_deps_${_filename})
 
@@ -69,6 +82,12 @@ _generate_msg_eus(pkg_ros_basics
 )
 
 ### Generating Services
+_generate_srv_eus(pkg_ros_basics
+  "/home/kotesh/catkin_ws/src/pkg_ros_basics/srv/AddTwoInts.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/pkg_ros_basics
+)
 
 ### Generating Module File
 _generate_module_eus(pkg_ros_basics
@@ -82,6 +101,8 @@ add_custom_target(pkg_ros_basics_generate_messages_eus
 add_dependencies(pkg_ros_basics_generate_messages pkg_ros_basics_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/kotesh/catkin_ws/src/pkg_ros_basics/srv/AddTwoInts.srv" NAME_WE)
+add_dependencies(pkg_ros_basics_generate_messages_eus _pkg_ros_basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kotesh/catkin_ws/src/pkg_ros_basics/msg/myMessage.msg" NAME_WE)
 add_dependencies(pkg_ros_basics_generate_messages_eus _pkg_ros_basics_generate_messages_check_deps_${_filename})
 
@@ -102,6 +123,12 @@ _generate_msg_lisp(pkg_ros_basics
 )
 
 ### Generating Services
+_generate_srv_lisp(pkg_ros_basics
+  "/home/kotesh/catkin_ws/src/pkg_ros_basics/srv/AddTwoInts.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/pkg_ros_basics
+)
 
 ### Generating Module File
 _generate_module_lisp(pkg_ros_basics
@@ -115,6 +142,8 @@ add_custom_target(pkg_ros_basics_generate_messages_lisp
 add_dependencies(pkg_ros_basics_generate_messages pkg_ros_basics_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/kotesh/catkin_ws/src/pkg_ros_basics/srv/AddTwoInts.srv" NAME_WE)
+add_dependencies(pkg_ros_basics_generate_messages_lisp _pkg_ros_basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kotesh/catkin_ws/src/pkg_ros_basics/msg/myMessage.msg" NAME_WE)
 add_dependencies(pkg_ros_basics_generate_messages_lisp _pkg_ros_basics_generate_messages_check_deps_${_filename})
 
@@ -135,6 +164,12 @@ _generate_msg_nodejs(pkg_ros_basics
 )
 
 ### Generating Services
+_generate_srv_nodejs(pkg_ros_basics
+  "/home/kotesh/catkin_ws/src/pkg_ros_basics/srv/AddTwoInts.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/pkg_ros_basics
+)
 
 ### Generating Module File
 _generate_module_nodejs(pkg_ros_basics
@@ -148,6 +183,8 @@ add_custom_target(pkg_ros_basics_generate_messages_nodejs
 add_dependencies(pkg_ros_basics_generate_messages pkg_ros_basics_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/kotesh/catkin_ws/src/pkg_ros_basics/srv/AddTwoInts.srv" NAME_WE)
+add_dependencies(pkg_ros_basics_generate_messages_nodejs _pkg_ros_basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kotesh/catkin_ws/src/pkg_ros_basics/msg/myMessage.msg" NAME_WE)
 add_dependencies(pkg_ros_basics_generate_messages_nodejs _pkg_ros_basics_generate_messages_check_deps_${_filename})
 
@@ -168,6 +205,12 @@ _generate_msg_py(pkg_ros_basics
 )
 
 ### Generating Services
+_generate_srv_py(pkg_ros_basics
+  "/home/kotesh/catkin_ws/src/pkg_ros_basics/srv/AddTwoInts.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/pkg_ros_basics
+)
 
 ### Generating Module File
 _generate_module_py(pkg_ros_basics
@@ -181,6 +224,8 @@ add_custom_target(pkg_ros_basics_generate_messages_py
 add_dependencies(pkg_ros_basics_generate_messages pkg_ros_basics_generate_messages_py)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/kotesh/catkin_ws/src/pkg_ros_basics/srv/AddTwoInts.srv" NAME_WE)
+add_dependencies(pkg_ros_basics_generate_messages_py _pkg_ros_basics_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kotesh/catkin_ws/src/pkg_ros_basics/msg/myMessage.msg" NAME_WE)
 add_dependencies(pkg_ros_basics_generate_messages_py _pkg_ros_basics_generate_messages_check_deps_${_filename})
 

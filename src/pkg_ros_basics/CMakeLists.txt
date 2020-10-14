@@ -5,6 +5,8 @@ project(pkg_ros_basics)
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   rospy
+  roscpp
+  std_msgs
   message_generation
 )
 
@@ -12,6 +14,12 @@ add_message_files(
   FILES
   myMessage.msg
 )
+
+add_service_files(
+  FILES
+  AddTwoInts.srv
+)
+
 
 generate_messages(
   DEPENDENCIES

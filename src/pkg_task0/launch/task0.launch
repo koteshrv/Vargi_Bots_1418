@@ -20,7 +20,6 @@
         <param name="/background_b" value="34" />
     	</node>
     
-   	<node pkg="turtlesim" type="turtle_teleop_key" name="node_turtle_teleop_key" />
 	<node name="node_turtle_revolve" pkg="pkg_task0" type="node_turtle_revolve.py" output="screen"/>
 	
 </launch>

@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pkg_ros_basics_generate_messages_py"
   "/home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/msg/_myMessage.py"
+  "/home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/srv/_AddTwoInts.py"
   "/home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/msg/__init__.py"
+  "/home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/srv/__init__.py"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = "/home/kotesh/catkin_ws/src/pkg_ros_basics/msg/myMessage.msg"
-services_str = ""
+services_str = "/home/kotesh/catkin_ws/src/pkg_ros_basics/srv/AddTwoInts.srv"
 pkg_name = "pkg_ros_basics"
 dependencies_str = "geometry_msgs;std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

@@ -54,7 +54,9 @@ CMAKE_BINARY_DIR = /home/kotesh/catkin_ws/build/pkg_ros_basics
 include CMakeFiles/pkg_ros_basics_generate_messages_py.dir/progress.make
 
 CMakeFiles/pkg_ros_basics_generate_messages_py: /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/msg/_myMessage.py
+CMakeFiles/pkg_ros_basics_generate_messages_py: /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/srv/_AddTwoInts.py
 CMakeFiles/pkg_ros_basics_generate_messages_py: /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/msg/__init__.py
+CMakeFiles/pkg_ros_basics_generate_messages_py: /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/srv/__init__.py
 
 
 /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/msg/_myMessage.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
@@ -62,14 +64,28 @@ CMakeFiles/pkg_ros_basics_generate_messages_py: /home/kotesh/catkin_ws/devel/.pr
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kotesh/catkin_ws/build/pkg_ros_basics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG pkg_ros_basics/myMessage"
 	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/kotesh/catkin_ws/src/pkg_ros_basics/msg/myMessage.msg -Ipkg_ros_basics:/home/kotesh/catkin_ws/src/pkg_ros_basics/msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p pkg_ros_basics -o /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/msg
 
+/home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/srv/_AddTwoInts.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
+/home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/srv/_AddTwoInts.py: /home/kotesh/catkin_ws/src/pkg_ros_basics/srv/AddTwoInts.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kotesh/catkin_ws/build/pkg_ros_basics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV pkg_ros_basics/AddTwoInts"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/kotesh/catkin_ws/src/pkg_ros_basics/srv/AddTwoInts.srv -Ipkg_ros_basics:/home/kotesh/catkin_ws/src/pkg_ros_basics/msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p pkg_ros_basics -o /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/srv
+
 /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/msg/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/msg/__init__.py: /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/msg/_myMessage.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kotesh/catkin_ws/build/pkg_ros_basics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for pkg_ros_basics"
+/home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/msg/__init__.py: /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/srv/_AddTwoInts.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kotesh/catkin_ws/build/pkg_ros_basics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for pkg_ros_basics"
 	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/msg --initpy
+
+/home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/srv/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/srv/__init__.py: /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/msg/_myMessage.py
+/home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/srv/__init__.py: /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/srv/_AddTwoInts.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kotesh/catkin_ws/build/pkg_ros_basics/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python srv __init__.py for pkg_ros_basics"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/srv --initpy
 
 pkg_ros_basics_generate_messages_py: CMakeFiles/pkg_ros_basics_generate_messages_py
 pkg_ros_basics_generate_messages_py: /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/msg/_myMessage.py
+pkg_ros_basics_generate_messages_py: /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/srv/_AddTwoInts.py
 pkg_ros_basics_generate_messages_py: /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/msg/__init__.py
+pkg_ros_basics_generate_messages_py: /home/kotesh/catkin_ws/devel/.private/pkg_ros_basics/lib/python2.7/dist-packages/pkg_ros_basics/srv/__init__.py
 pkg_ros_basics_generate_messages_py: CMakeFiles/pkg_ros_basics_generate_messages_py.dir/build.make
 
 .PHONY : pkg_ros_basics_generate_messages_py
