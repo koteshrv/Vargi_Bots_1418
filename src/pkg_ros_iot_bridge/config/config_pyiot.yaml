@@ -1,6 +1,6 @@
 config_pyiot:
   mqtt:
-    server_url: "broker.mqttdashboard.com"
+    server_url: "broker.mqttdashboard.com"    # http://www.hivemq.com/demos/websocket-client/
     server_port: 1883
     topic_sub: /eyrc/eYRcPVpK/iot_to_ros
     topic_pub: /eyrc/eYRcPVpK/ros_to_iot
