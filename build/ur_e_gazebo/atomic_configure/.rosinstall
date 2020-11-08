@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/kotesh/catkin_ws/devel/.private/ur_e_gazebo/setup.sh

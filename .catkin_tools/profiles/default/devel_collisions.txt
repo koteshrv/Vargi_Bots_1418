@@ -1,3 +1,4 @@
+/home/kotesh/catkin_ws/devel/lib/libROSLogicalCameraPlugin.so 1
 /home/kotesh/catkin_ws/devel/lib/python2.7/dist-packages/pkg_ros_actions/__init__.py 1
-/home/kotesh/catkin_ws/devel/./cmake.lock 63
+/home/kotesh/catkin_ws/devel/./cmake.lock 95
 /home/kotesh/catkin_ws/devel/share/pkg_ros_actions/cmake/pkg_ros_actions-msg-paths.cmake 1
